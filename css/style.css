@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 1;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+nav {
+    display: flex;
+    /* Cambia flex-start por flex-end para moverlo a la derecha */
+    justify-content: flex-end; 
+    padding: 20px; /* Espacio para que no pegue al borde */
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #778da9;
+    margin: 0 15px;
+    
+    /* Eliminamos text-align: center para que no haya conflictos */
+}
+/* Estilo general de la sección */
+#contactos {
+    max-width: 600px;
+    margin: 40px auto; /* Centra la sección en la página */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Títulos */
+#contactos h2, #contactos h3 {
+    color: #1b263b; /* Un azul más oscuro para contraste */
+    text-align: center;
+}
+
+/* Estilo de la lista de contacto */
+#contactos ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#contactos li {
+    margin: 10px 0;
+    color: #415a77;
+}
+
+/* Estilo del Formulario */
+form {
+    display: flex;
+    flex-direction: column; /* Pone una etiqueta sobre la otra */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #778da9;
+}
+
+/* El botón de enviar */
+button[type="submit"] {
+    background-color: #778da9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #1b263b; /* Cambia a un tono más oscuro al pasar el mouse */
+}
+
+/* Contenedor Principal */
+#acerca-de-nosotros {
+    display: flex;
+    flex-wrap: wrap; /* Para que en móviles se vea uno arriba del otro */
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+#acerca-de-nosotros h2 {
+    width: 100%; /* El título ocupa todo el ancho arriba */
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1b263b;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* La Imagen de la Taquería */
+#acerca-de-nosotros img {
+    border-radius: 15px; /* Bordes redondeados como en la foto de los clientes */
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    max-width: 100%; /* Ajuste responsivo */
+    height: auto;
+}
+#acerca-de-nosotros img:hover {
+    transform: scale(1.02); /* Efecto sutil al pasar el mouse */
+}
+
+/* El Texto Descriptivo */
+#acerca-de-nosotros p {
+    flex: 1; /* El texto toma el espacio restante */
+    min-width: 300px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #415a77;
+    text-align: justify;
+}

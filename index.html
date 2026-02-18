@@ -6,15 +6,12 @@
     <title >Mi Taqueria</title>
     <!-- Icono de la pestaña -->
     <link rel="icon" href="img/icon.png.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>MI TAQUERIA</h1>
-        <img src="img/mitaqueria.png" alt="logo de mi taqueria" width="500">
-        <p>Esta taqueria es una de las mejores por que te brindan 
-            un excelente servicio y calidad en los productos.
-        </p>
-        <nav>
+        <nav> 
             <ul>
                 <a href="#acerca de">Taqueria</a>
                 <a href="#servicios">Servicios</a>
@@ -22,10 +19,15 @@
                 <a href="#contactos">Contactos</a>
             </ul>
         </nav>
+        <img src="img/mitaqueria.png" alt="logo de mi taqueria" width="500">
+        <p>Esta taqueria es una de las mejores por que te brindan 
+            un excelente servicio y calidad en los productos.
+        </p>
+        
     </header>
     <main>
-        <section id="acerca de">
-            <h2>Acerca de Mi Taqueria</h2>
+        <section id="acerca-de-nosotros">
+            <h2>Mi Taqueria</h2>
             <img src="img/mi-taqueria-imagen1.png" alt=" esta imagen muestra la historia de esta taqiueria" width="500">
             <p>Mi Taqueria es un lugar donde puedes disfrutar de los mejores tacos de la ciudad. 
                 Nuestro compromiso es ofrecerte una experiencia culinaria única, con ingredientes frescos y auténticos sabores mexicanos. 
@@ -62,16 +64,14 @@
             <ul>
                 <li>Teléfono: (123) 456-7890</li>
                 <li>Email: mitaqueria@gmail.com</li>
-
+            </ul> 
                 <h3>Envia mensaje para mayor información</h3>
-                <form></form>
+                <form>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
                     <label for="mensaje">Mensaje:</label><br>
                     <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
-                    <input type="submit" value="Enviar">
+                    <button type="submit" value="Enviar">Enviar</button>
                 </form>
         </section>
     </main>
