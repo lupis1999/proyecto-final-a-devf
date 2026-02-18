@@ -119,3 +119,149 @@ input[type="submit"]:hover {
     color: #415a77;
     text-align: justify;
 }
+
+#servicios {
+    padding: 60px 20px;
+    
+    text-align: center;
+}
+
+#servicios h2 {
+    color: #1b263b;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Estilo del artículo (Menú Variado) */
+#servicios article {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+#servicios ul,h3 {
+    color: #e76f51; /* Color naranja vibrante para resaltar */
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#servicios li {
+    background: #778da9;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px; /* Estilo de botón redondeado */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#servicios li:hover {
+    transform: translateY(-5px); /* Efecto de levante al pasar el mouse */
+    background-color: #1b263b;
+}
+
+/* Contenedor de Horarios */
+#horarios {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 700px;
+    margin: 30px auto;
+    border-radius: 20px;
+    /* Sombra suave para darle profundidad como al cuadro del menú */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+#horarios h2 {
+    color: #rgba; /* El naranja vibrante de los tacos */
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#horarios p {
+    color: #rgba;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* Estilo de la lista de horarios */
+#horarios ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#horarios li {
+    background: #f8f9fa;
+    padding: 15px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    color: #1b263b;
+    font-weight: bold;
+    border-left: 5px solid #778da9; /* Detalle en azul para combinar con el nav */
+    display: flex;
+    justify-content: space-between; /* Separa el día de la hora */
+}
+
+/* Resaltar la hora */
+#horarios li span {
+    color: #e76f51;
+}
+/* Contenedor Principal de la Sección Inicio */
+#inicio {
+    display: flex;
+    flex-wrap: wrap; /* Adaptable a dispositivos móviles */
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Título: MI TAQUERIA */
+#inicio h1 {
+    width: 100%; 
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1b263b;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* El Logo de la Taquería */
+#inicio img {
+    border-radius: 15px; 
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    max-width: 500px; /* Manteniendo el ancho que pediste */
+    height: auto;
+}
+
+#inicio img:hover {
+    transform: scale(1.02); /* Efecto sutil al pasar el mouse */
+}
+
+/* El Párrafo Descriptivo */
+#inicio p {
+    flex: 1; 
+    min-width: 300px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #415a77;
+    text-align: justify;
+}
