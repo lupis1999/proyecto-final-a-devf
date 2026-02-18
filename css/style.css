@@ -306,3 +306,30 @@ input[type="submit"]:hover {
     color: #415a77;
     text-align: justify;
 }
+/* Footer estilo 'Acerca de Nosotros' */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px; /* Mismo espaciado que 'Acerca de nosotros' */
+    max-width: 1100px;  /* Ancho consistente con el resto del sitio */
+    margin: 0 auto;     /* Centrado automático */
+    background-color: #1b263b;
+    
+    /* Tipografía y Colores */
+    color: #fdfaf5;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    /* Borde superior sutil para separar secciones */
+    border-top: 1px solid #e76f51;
+}
+
+/* Efecto al pasar el mouse (opcional) */
+footer:hover {
+    color: #e76f51; /* El naranja vibrante de tu marca */
+    transition: 0.3s ease;
+}
+
