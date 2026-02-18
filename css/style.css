@@ -20,62 +20,85 @@ nav a {
     /* Eliminamos text-align: center para que no haya conflictos */
 }
 /* Estilo general de la sección */
+/* Contenedor Principal (Estilo 'Acerca de Nosotros') */
 #contactos {
-    max-width: 600px;
-    margin: 40px auto; /* Centra la sección en la página */
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    max-width: 1100px; /* Ancho consistente con el resto del sitio */
+    margin: 0 auto;
+    background-color: #fff;
 }
 
-/* Títulos */
+/* Títulos de la sección */
 #contactos h2, #contactos h3 {
-    color: #1b263b; /* Un azul más oscuro para contraste */
+    width: 100%;
     text-align: center;
+    font-size: 2.5rem;
+    color: #1b263b; /* El azul oscuro de tu marca */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
-/* Estilo de la lista de contacto */
+/* Lista de contacto (Teléfono y Email) */
 #contactos ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 30px;
-}
-
-#contactos li {
-    margin: 10px 0;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.2rem;
     color: #415a77;
 }
 
 /* Estilo del Formulario */
 form {
     display: flex;
-    flex-direction: column; /* Pone una etiqueta sobre la otra */
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; /* Centra el formulario dentro de la sección */
+    gap: 15px;
 }
 
 label {
-    margin-bottom: 5px;
     font-weight: bold;
     color: #778da9;
+    margin-bottom: -10px; /* Acerca la etiqueta al campo */
 }
 
-/* El botón de enviar */
-button[type="submit"] {
-    background-color: #778da9;
+/* Campos de entrada (Estilo elegante) */
+input, 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fdfaf5; /* Tono crema como el fondo de tu dibujo */
+    font-family: inherit;
+}
+
+/* Botón de Enviar (Estilo Botón Moderno) */
+input[type="submit"] {
+    background-color: #e76f51; /* Naranja vibrante para resaltar */
     color: white;
-    padding: 12px 20px;
+    padding: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px; /* Redondeado como los servicios */
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.1rem;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(231, 111, 81, 0.3);
 }
 
 input[type="submit"]:hover {
-    background-color: #1b263b; /* Cambia a un tono más oscuro al pasar el mouse */
+    background-color: #1b263b;
+    transform: scale(1.02);
 }
+
 
 /* Contenedor Principal */
 #acerca-de-nosotros {
@@ -120,105 +143,123 @@ input[type="submit"]:hover {
     text-align: justify;
 }
 
+/* Contenedor Principal (Lado Izquierdo) */
 #servicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
     padding: 60px 20px;
-    
-    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
+/* Título de Servicios */
 #servicios h2 {
-    color: #1b263b;
+    width: 100%;
+    text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    color: #1b263b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Estilo del artículo (Menú Variado) */
+/* Tarjeta del Menú Variado (Estilo "Acerca de") */
 #servicios article {
-    max-width: 800px;
-    margin: 0 auto 40px;
+    flex: 1;
+    min-width: 300px;
     background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.05); /* Sombra suave como el logo */
 }
 
-#servicios ul,h3 {
-    color: #e76f51; /* Color naranja vibrante para resaltar */
+#servicios h3 {
+    color: #e76f51;
+    font-size: 1.8rem;
     margin-bottom: 15px;
+}
+
+/* Botones de Servicios (Estilo Moderno) */
+#servicios ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
     list-style: none;
     padding: 0;
+    justify-content: center;
 }
 
 #servicios li {
     background: #778da9;
     color: white;
-    padding: 15px 25px;
-    border-radius: 50px; /* Estilo de botón redondeado */
+    padding: 12px 20px;
+    border-radius: 50px;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: 0.3s;
 }
 
 #servicios li:hover {
-    transform: translateY(-5px); /* Efecto de levante al pasar el mouse */
     background-color: #1b263b;
+    transform: scale(1.05); /* Efecto de crecimiento sutil */
 }
 
-/* Contenedor de Horarios */
+/* Contenedor Principal (Estilo 'Acerca de Nosotros') */
 #horarios {
-    background-color: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
-    max-width: 700px;
-    margin: 30px auto;
-    border-radius: 20px;
-    /* Sombra suave para darle profundidad como al cuadro del menú */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    max-width: 1100px; /* Consistente con tus otras secciones */
+    margin: 0 auto;
+    background-color: #fff;
 }
 
+/* Título de Horarios */
 #horarios h2 {
-    color: #rgba; /* El naranja vibrante de los tacos */
-    font-size: 2rem;
-    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1b263b; /* El azul oscuro del logo */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
+/* Texto descriptivo */
 #horarios p {
-    color: #rgba;
-    margin-bottom: 25px;
-    font-weight: 500;
+    color: #415a77;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-/* Estilo de la lista de horarios */
+/* Lista de Horarios (Estilo tarjetas limpias) */
 #horarios ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Para que no se estire demasiado */
 }
 
 #horarios li {
-    background: #f8f9fa;
-    padding: 15px 30px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
-    color: #1b263b;
-    font-weight: bold;
-    border-left: 5px solid #778da9; /* Detalle en azul para combinar con el nav */
+    background: #fdfaf5; /* Un tono crema suave como el fondo de la ilustración */
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
     display: flex;
-    justify-content: space-between; /* Separa el día de la hora */
+    justify-content: space-between;
+    font-weight: bold;
+    color: #1b263b;
 }
 
-/* Resaltar la hora */
+/* Resaltar las horas en naranja */
 #horarios li span {
-    color: #e76f51;
+    color: #e76f51; /* El naranja vibrante del pastor */
 }
+
 /* Contenedor Principal de la Sección Inicio */
 #inicio {
     display: flex;
